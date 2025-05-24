@@ -14,9 +14,14 @@ CORS(app)
 # Ensure output folder exists
 OUTPUT_FOLDER = "processed_files"
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
+import os
+import pandas as pd
 
-# Load base dataset
-dataset_path = "backend/student_performance.csv"
+# Get the directory where this script is located
+script_dir = os.path.dirname(__file__)
+dataset_path = os.path.join(script_dir, 'student_performance.csv')
+df = pd.read_csv(dataset_path)
+
 df = pd.read_csv(dataset_path)
 selected_features = ['G1', 'G2', 'studytime', 'failures', 'absences']
 
