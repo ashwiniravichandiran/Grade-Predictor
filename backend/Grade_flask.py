@@ -16,7 +16,7 @@ OUTPUT_FOLDER = "processed_files"
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 # Load base dataset
-dataset_path = "student_performance.csv"
+dataset_path = "backend/student_performance.csv"
 df = pd.read_csv(dataset_path)
 selected_features = ['G1', 'G2', 'studytime', 'failures', 'absences']
 
