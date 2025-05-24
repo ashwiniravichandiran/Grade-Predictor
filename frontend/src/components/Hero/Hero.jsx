@@ -1,0 +1,30 @@
+import React from 'react';
+import './Hero.css';
+ // Import the image
+import { useNavigate } from "react-router-dom";
+import { Button } from '@mui/material';
+
+const Hero = ({ isVisible }) => {
+  const navigate = useNavigate();
+  
+  return (
+    <div className='hero container'>
+      {isVisible && (
+        <div className='hero-text'>
+          <h1>Hi there!</h1>
+          <h2>Let's strive for excellence and unlock your full potential!</h2>
+          
+          <Button 
+            variant="outlined" 
+            onClick={() => navigate("/signup")}
+            sx={{ fontSize: '1.0rem', padding: '10px 22px', borderRadius: '4px'}}
+          >
+            Sign Up
+          </Button>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Hero;

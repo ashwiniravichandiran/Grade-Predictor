@@ -1,0 +1,40 @@
+.bg-state{
+ background-color: #23231D;
+    border: none;
+    box-shadow: none;
+    min-height: 100vh; /* Ensure it covers the full screen */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Card container */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 5rem 2rem;
+  flex-wrap: wrap;
+  
+}
+
+/* Individual cards */
+.option-card-inst {
+  background-color: rgb(246, 244, 230);
+  /* margin-top: 140px; */
+  border-radius: 8px;
+  padding: 2rem;
+  width: 500px;
+  text-align: center;
+  position: relative;
+  padding-top: 80px;
+  border: none; /* Ensures no border */
+  box-shadow: none; /* Removes shadow that might look like a border */
+  cursor: pointer;
+}
+
+.option-card-inst:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

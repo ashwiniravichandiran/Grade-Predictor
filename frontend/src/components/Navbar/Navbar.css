@@ -1,0 +1,70 @@
+
+/* Remove old styles */
+nav ul li {
+    display: none; /* Remove if not needed */
+}
+
+.navbar-container {
+    width: 100%;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    background: rgba(36, 26, 3, 0.1); /* Optional: slight background for visibility */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 120px; /* Increased from 80px */
+    height: 120px; /* Increased from 80px */
+    /* Remove white background from image */
+    mix-blend-mode: multiply;
+    filter: contrast(1.2) brightness(1.1);
+    /* Alternative approach - make white transparent */
+    /* background: transparent; */
+}
+
+/* If the image still has white background, try this: */
+.logo-transparent {
+    width: 120px; /* Increased from 80px */
+    height: 120px; /* Increased from 80px */
+    background: transparent;
+    /* Make white pixels transparent */
+    filter: contrast(1.5) brightness(0.9);
+    mix-blend-mode: screen;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+     /* Pushes the nav-buttons to the right side */
+}
+
+.login-btn {
+     color: white !important;
+    border-radius: 2rem !important;
+    border-color: antiquewhite !important;
+    padding: 8px 24px !important;
+    font-weight: 600 !important;
+    margin-right: 50px !important; /* Adds space from other elements */
+    transition: all 0.3s ease !important; /* Smooth hover transition */
+}
+
+.login-btn:hover {
+    background-color: rgba(35, 35, 29, 0.8) !important; /* Slightly transparent on hover */
+    
+}
+
+/* Remove old styles */
+nav ul li {
+    display: none; /* Remove if not needed */
+}
